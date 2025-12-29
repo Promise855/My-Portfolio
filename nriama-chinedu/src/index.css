@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2c3e50;
+  --color-secondary: #3498db;
+  --color-hover-text: #2980b9;
+  --color-accent: #e74c3c;
+  --color-light-bg: #ecf0f1;
+  --color-dark-bg: #1a252f;
+  --color-text-light: #3f4b57;
+  --color-text-dark: #ecf0f1;
+}
+
+/* Apply Poppins as the default font and smooth scrolling for the entire app */
+html {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.font-piedra {
+  font-family: 'Piedra', cursive;
+}
+
+/* Typing animation */
+.animate-typing {
+  overflow: hidden;
+  border-right: 0.15em solid #3498db; /* secondary color cursor */
+  white-space: nowrap;
+  animation: typing 4s steps(30) forwards, blink-caret 0.85s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #4e5153; }
+}
